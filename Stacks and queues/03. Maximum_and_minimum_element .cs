@@ -1,6 +1,6 @@
 using System.Linq;
 
-int queries = int.Parse(Console.ReadLine());
+int querie = int.Parse(Console.ReadLine());
 Stack<int> stack = new Stack<int>();
 
 for (int i = 0; i < queries; i++)
