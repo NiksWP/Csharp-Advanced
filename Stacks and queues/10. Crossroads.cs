@@ -1,28 +1,28 @@
 int greenLight = int.Parse(Console.ReadLine());
 int constGreen = greenLight;
 int window = int.Parse(Console.ReadLine());
-Queue<string> cars = new Queue<string>(); // -1 5
+Queue<string> cars = new Queue<string>();
 
 bool crashed = false;
 int carsPassed = 0;
 string input;
-while ((input = Console.ReadLine()) != "END") // 1 + 1 + 1
+while ((input = Console.ReadLine()) != "END")
 {
-	if (input != "green") // MERCEDES 10 5   2
+	if (input != "green")
 	{
 		cars.Enqueue(input);
 	}
 	else
 	{
-		while (cars.Any()) // Докато има коли в опашката
+		while (cars.Any())
 		{
-			string car = cars.Peek(); // Вземаме първата кола от опашката, без да я премахваме
+			string car = cars.Peek();
 
 			if (car.Length <= greenLight + window && greenLight > 0)
 			{
 				carsPassed++;
-				greenLight -= car.Length; // Намаляваме времето за зелената светлина
-				cars.Dequeue(); // Премахваме колата от опашката
+				greenLight -= car.Length;
+				cars.Dequeue();
 				continue;
 			}
 			if (car.Length > greenLight + window && greenLight > 0)
