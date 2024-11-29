@@ -30,6 +30,7 @@ namespace ChickenSnack
                     eatenFoods++;
                     prices.Dequeue();
                     money.Pop();
+
                     if (money.Any())
                     {
                         money.Push(money.Pop() + spare);
