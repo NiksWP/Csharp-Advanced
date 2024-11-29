@@ -19,6 +19,7 @@ namespace ChickenSnack
                 for (int col = 0; col < size; col++)
                 {
                     matrix[row, col] = elements[col];
+
                     if (elements[col] == 'E')
                     {
                         enemiesCount++;
