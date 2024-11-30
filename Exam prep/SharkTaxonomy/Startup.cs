@@ -96,7 +96,6 @@ namespace SharkTaxonomy
 			//Could be spotted in the Open Ocean, typical menu: Fish
 			//Oceanic Whitetip shark: 3m long.
 			//Could be spotted in the Open Ocean, typical menu: Fish
-
 		}
 	}
 }
