@@ -60,7 +60,6 @@ namespace SharkTaxonomy
 			{
 				sb.AppendLine(shark.ToString().TrimEnd());
 			}
-
 			return sb.ToString().TrimEnd();
 		}
 	}
