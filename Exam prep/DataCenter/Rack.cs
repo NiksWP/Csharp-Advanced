@@ -7,6 +7,7 @@ namespace DataCenter
 		public int Slots { get; set; }
 		public List<Server> Servers { get; set; }
 		public int GetCount => Servers.Count;
+
 		public Rack(int slots)
 		{
 			this.Slots = slots;
