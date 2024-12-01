@@ -24,6 +24,7 @@ namespace DataCenter
 		public bool RemoveServer (string server)
 		{
 			Server toRemove = Servers.Where(x => x.SerialNumber == server).FirstOrDefault();
+
 			if (toRemove != null)
 			{
 				Servers.Remove(toRemove);
